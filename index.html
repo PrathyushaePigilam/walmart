@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walmart Sales Prediction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+<body>
+    <br>
+     <div class="container"> 
+    <h1 style="text-align:center">Walmart Sales Prediction</h1><br><br>
+    
+      <form method="post" action="url{{predict}}">
+        <div class="row">
+        
+            <label for="store" style="font-size: 18px;">Store:</label>
+            <input type="number" name="store" placeholder="Enter store number" style="width: 25%" ><br><br>
+            <label for="dept" style="font-size: 17px">Department:</label>
+            <input type="number" name="dept" placeholder="Enter Department" style="width: 25%"><br><br>
+            <label for="date" style="font-size: 17px">Date:</label>
+            <input type="date" id="date" style="width: 25%"> 
+            <br><br>
+            <label for="size" style="font-size: 17px">Size:</label>
+            <input type="number" id="size" name="size" placeholder="Enter Size" style="width: 25%" ><br><br>
+            <label for="temp" style="font-size: 16px;">Temperature:</label>
+            <input type="number" id="temp" name="temp" placeholder="Enter Temperature" style="width: 25%"><br><br>
+      
+            
+            <label for="holiday" style="font-size: 17px;margin-left: 135px;" >Holiday:</label>
+            <input class="form-check-input" type="radio" value="1" name="HolidayRadio" id="yes" style="width:auto">
+            <label class="form-check-label" for="yes" style="margin-left:0px;color:aliceblue;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.979)"> Yes </label>
+            <input class="form-check-input" type="radio" value="0" name="HolidayRadio" id="no" style="width:auto">
+            <label class="form-check-label" for="no" style="margin-left:0px;color:aliceblue;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.979)"> No </label>
+        
+            
+        
+        
+            
+        
+        </div>
+        <br>
+        <button type="submit" class="btn btn-warning  btn-block btn-large" style="width: 15%; margin: auto; margin-top: 5%;">Predict</button>
+
+      </form>
+    </div> 
+
+    <!-- {% if output %}
+    <div style="color:blueviolet;font-family:serif">
+        <p id="text">Predicted weekly sales for Store {{store}}, Department {{dept}} in the month of {{month_name}} {{year}} is : {{ output }}</p>
+    </div>
+    {% endif %}
+   </div> -->
+</div>
+
+
+
+    
+</body>
+</html>
